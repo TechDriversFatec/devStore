@@ -105,7 +105,7 @@ ________________________________________________________________________________
 ________________________________________________________________________________________________
 
 ## :card_index_dividers: Cards das Sprints
-<img src="/Imagens PI/card1.png" width="1500" height="450">
-<img src="/Imagens PI/card2.png" width="1500" height="450">
-<img src="/Imagens PI/card3.png" width="1500" height="450">
-<img src="/Imagens PI/card4.png" width="1500" height="450">
+<img src="/Imagens PI/card1.png" width="500" height="450">
+<img src="/Imagens PI/card2.png" width="500" height="450">
+<img src="/Imagens PI/card3.png" width="500" height="450">
+<img src="/Imagens PI/card4.png" width="500" height="450">
