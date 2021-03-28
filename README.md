@@ -1,3 +1,4 @@
+<img src="/Imagens PI/logo.jpg" width="1200" height="450">
 # PROJETO INTEGRADOR - DevStore
 _FATEC Profº Jessen Vidal, São José dos Campos, 2º semestre de 2020, Curso: Tecnologia em Banco de Dados_
 
