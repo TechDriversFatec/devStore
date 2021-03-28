@@ -1,5 +1,6 @@
 # PROJETO INTEGRADOR - DevStore
-FATEC Profº Jessen Vidal, São José dos Campos, 2º semestre de 2020, Curso: Tecnologia em Banco de Dados
+<FATEC Profº Jessen Vidal, São José dos Campos, 2º semestre de 2020, Curso: Tecnologia em Banco de Dados -->
+<!--img src="Imagens PI/Logo_Fatec.png"-->
 <p align="center">
 <img src="/Imagens PI/logo.jpg">
 
@@ -66,7 +67,6 @@ ________________________________________________________________________________
 
 ## :hourglass_flowing_sand: Planejamento de Entregas
 >  **SPRINT 1**
->- [X] 60/100
 >- Entendimento do Problema do Cliente.
 >- Estudo sobre o CAR e sobre a estrutura dos shapefile.
 >- Criação do Nome do Grupo e Logo.
@@ -78,7 +78,6 @@ ________________________________________________________________________________
 >- Elaboração da Apresentação (Powerpoint).
 
 >  **SPRINT 2**
->- [X] 70/100
 >- Função de criação de estrutura de diretórios (Código;;;).
 >- Move arquivos de  C:\...Processar para C:\...Processando
 >- Trabalhar os arquivos .ZIP.
@@ -91,7 +90,6 @@ ________________________________________________________________________________
 >- Normalização da base de dados.
 
  **SPRINT 3**
->- [X] 80/100
 >- Borndown da Equipe.
 >- Instalar PostgreSQL.
 >- Instalar Plugin PostGis.
@@ -102,7 +100,6 @@ ________________________________________________________________________________
 >- Atualizar tabela de Controle de Integração com o Status de “Integrado” ou “Falta Shapefile”.
 
  **SPRINT 4**
->- [X] 90/100
 >- Criar interface gráfica.
 >- Borndown da Equipe.
 >- Integração dos shapefile na base de dados.
