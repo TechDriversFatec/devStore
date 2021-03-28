@@ -117,3 +117,5 @@ ________________________________________________________________________________
 <img src="/Imagens PI/wire2.jpg">
 <img src="/Imagens PI/wire3.jpg">
 
+## :bar_chart: User Stories
+<img src="/Imagens PI/User_.jpg">
