@@ -111,7 +111,7 @@ ________________________________________________________________________________
 <img src="/Imagens PI/card2.jpg">
 <img src="/Imagens PI/card3.jpg">
 <img src="/Imagens PI/card4.jpg">
-________________________________________________________________________________________________
+
 
 ## :bar_chart: User Stories
 <img src="/Imagens PI/User_.jpg">
