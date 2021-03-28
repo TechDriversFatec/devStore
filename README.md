@@ -1,14 +1,18 @@
-<img src="/Imagens PI/logo.jpg" width="1200" height="450">
 # PROJETO INTEGRADOR - DevStore
-_FATEC Profº Jessen Vidal, São José dos Campos, 2º semestre de 2020, Curso: Tecnologia em Banco de Dados_
+FATEC Profº Jessen Vidal, São José dos Campos, 2º semestre de 2020, Curso: Tecnologia em Banco de Dados
+<p align="center">
+<img src="/Imagens PI/logo.jpg">
+
 
 _________________________________________________________________________________________________
 ### **Grupo:**
-- Jeferson Constantino
-- Isabella Rosa Peixoto
-- Paulo Vitor
-- Fabio 
-- Junio Sedreto
+- Junio Sandretto  (SM)
+- Fábio  (PO)
+- Jeferson Constantino (ST)
+- Isabella Rosa Peixoto (ST)
+- Paulo Vitor (ST)
+- Eguimar Batista da Costa (ST)
+
 _________________________________________________________________________________________________
 
 ## :rocket: O Projeto
@@ -106,7 +110,7 @@ ________________________________________________________________________________
 ________________________________________________________________________________________________
 
 ## :card_index_dividers: Cards das Sprints
-<img src="/Imagens PI/card1.png" width="1200" height="450">
-<img src="/Imagens PI/card2.png" width="1200" height="450">
-<img src="/Imagens PI/card3.png" width="1200" height="450">
-<img src="/Imagens PI/card4.png" width="1200" height="450">
+<img src="/Imagens PI/card1.jpg" width="1200" height="450">
+<img src="/Imagens PI/card2.jpg" width="1200" height="450">
+<img src="/Imagens PI/card3.jpg" width="1200" height="450">
+<img src="/Imagens PI/card4.jpg" width="1200" height="450">
