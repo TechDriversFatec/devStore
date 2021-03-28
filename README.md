@@ -103,6 +103,7 @@ ________________________________________________________________________________
 >- Atualizar tabela de Controle de Integração com o Status de “Integrado” ou “Falta Shapefile”.
 
  **SPRINT 4**
+>- [X] 90/100
 >- Criar interface gráfica.
 >- Borndown da Equipe.
 >- Integração dos shapefile na base de dados.
@@ -110,7 +111,7 @@ ________________________________________________________________________________
 ________________________________________________________________________________________________
 
 ## :card_index_dividers: Cards das Sprints
-<img src="/Imagens PI/card1.jpg" width="1200" height="450">
-<img src="/Imagens PI/card2.jpg" width="1200" height="450">
-<img src="/Imagens PI/card3.jpg" width="1200" height="450">
-<img src="/Imagens PI/card4.jpg" width="1200" height="450">
+<img src="/Imagens PI/card1.jpg">
+<img src="/Imagens PI/card2.jpg">
+<img src="/Imagens PI/card3.jpg">
+<img src="/Imagens PI/card4.jpg">
