@@ -6,17 +6,17 @@ FATEC Profº Jessen Vidal, São José dos Campos, 2º semestre de 2020, Curso: T
 
 _________________________________________________________________________________________________
 ### **Grupo:**
-- Junio Sandretto  (SM)
-- Fábio  (PO)
-- Jeferson Constantino (ST)
-- Isabella Rosa Peixoto (ST)
-- Paulo Vitor (ST)
-- Eguimar Batista da Costa (ST)
+- Junio Sendreto  (SM)
+- Fábio José da Silva  (PO)
+- Jeferson Constantino (Dev)
+- Isabella Rosa Peixoto (Dev)
+- Paulo Vitor (Dev)
+- Eguimar Batista da Costa (Dev)
 
 _________________________________________________________________________________________________
 
 ## :rocket: O Projeto
-O objetivo deste projeto em questão é o de apresentar ao nosso cliente a empresa VISIONA uma solução para o problema de não ter uma base de dados comunizada, unificada e organizada dos registros que são disponibilizados pelos proprietários das áreas rurais, através do cadastro ambiental rural (CAR).
+O objetivo deste projeto em questão é apresentar ao nosso cliente, a empresa VISIONA, uma solução para o problema de não ter uma base de dados comunizada, unificada e organizada dos registros que são disponibilizados pelos proprietários das áreas rurais, através do cadastro ambiental rural (CAR).
 A empresa fornece a órgãos públicos e privados um registro geoprocessado por imagens de satélite orbitais, que tem por finalidade comparar os dados de dimensões territoriais, áreas de preservação, entes hídricos, topografia e outros dados referentes a propriedade, estes dados são comparados com a imagens de satélite em tempo real por isso é necessário que estejam atualizados e organizados.
 
 
@@ -24,25 +24,24 @@ ________________________________________________________________________________
 
 ## :dart: Proposta
 O grupo de API DevStore tem como meta desenvolver um MVP que forneça ao cliente uma base de dados completa, confiável e organizada com as informações oriundas do sistema CAR.
-Vamos para isso utilizar as ferramentas do ciclo de aprendizado e metodologias SCRUM (entregas e desenvolvimento ágil), nas sprints demonstraremos e entregaremos de forma gradativa desde a aquisição, leitura e depuração das informações até a construção e finalização do banco de dados.  
+Para isso será utilizado ferramentas do ciclo de aprendizado e metodologia a SCRUM (entregas e desenvolvimento ágil), nas sprints demonstraremos e entregaremos de forma gradativa desde a aquisição, leitura e depuração das informações até a construção e finalização do banco de dados.  
 
 
 
 
 ________________________________________________________________________________________________
 
-> **REQUISITOS**
-- [x]  **Baixar manualmente os shapefile de todos os estados** - Será necessário acessar o portal para baixar manualmente os shapefile.
+> **REQUISITOS*
 
- - [x]  **Descompactar arquivos baixados** - Pesquisar bibliotecas de permitam a leitura dos arquivos compactados, caso não encontremos, o será necessário descompactar.
+ - [x]  **Descompactar arquivos baixados** - Pesquisar bibliotecas de permitam a leitura dos arquivos compactados, caso não encontremos, o será necessário descompactar;
 
- - [x]  **Identificar os tipos de arquivos/atributo (pelo diretório)** - Cada diretório possui nome de acordo conteúdo do arquivo.
+ - [x]  **Identificar os tipos de arquivos/atributo (pelo diretório)** - Cada diretório possui nome de acordo conteúdo do arquivo;
 
- - [x]  **Reorganizar/filtrar apenas diretorios que possuam os 3 tipos as extensões minimas(.shp,.shx,*.dbf), que são os casos indispensáveis** - Quando um shapefile não possuir a estrutura correta(.shp,.shx,*.dbf),  não devemos ignorar, devemos tratar esta situação, informando que “não existe dado para o município”.
+ - [x]  **Reorganizar/filtrar apenas diretorios que possuam os 3 tipos as extensões minimas(.shp,.shx,*.dbf), que são os casos indispensáveis** - Quando um shapefile não possuir a estrutura correta(.shp,.shx,*.dbf),  não devemos ignorar, devemos tratar esta situação, informando que “não existe dado para o município”;
 
- - [x]  **Criar base de dados para dados georeferenciados**
+ - [x]  **Criar base de dados para dados georeferenciados unifcada com flexibilidade de ser popupalado por qualquer município do país**; e
 
- - [x]  **Importar arquivos Shapefile para a base de dados**<br><br>
+ - [x]  **Importar arquivos Shapefile para a base de dados**.<br><br>
 ________________________________________________________________________________________________
 > **TAREFAS**
 
