@@ -67,43 +67,43 @@ ________________________________________________________________________________
 
 ## :hourglass_flowing_sand: Planejamento de Entregas
 >  **SPRINT 1**
->- Entendimento do Problema do Cliente.
->- Estudo sobre o CAR e sobre a estrutura dos shapefile.
->- Criação do Nome do Grupo e Logo.
->- Elaboração do Product Backlog.
->- Elaboração das Users Stories.
->- Construção do Wireframe.
->- Elaboração dos Cards.
->- Construção/Formatação do README.
+>- Entendimento do Problema do Cliente;
+>- Estudo sobre o CAR e sobre a estrutura dos shapefile;
+>- Criação do Nome do Grupo e Logo;
+>- Elaboração do Product Backlog;
+>- Elaboração das Users Stories;
+>- Construção do Wireframe;
+>- Elaboração dos Cards;
+>- Construção/Formatação do README.md; e
 >- Elaboração da Apresentação (Powerpoint).
 
 >  **SPRINT 2**
->- Função de criação de estrutura de diretórios (Código;;;).
->- Move arquivos de  C:\...Processar para C:\...Processando
->- Trabalhar os arquivos .ZIP.
->- Mover arquivos para C:\...Processados\DDMMAAAA\
->- Criar Log do Fluxo.
->- Criar Prototipo (Figma).
->- Borndown da Equipe.
->- Elaborar modelo Conceitual de dados.
->- Elaborar modelo Lógico de dados.
+>- Função de criação de estrutura de diretórios (Código);
+>- Move arquivos de  C:\...Processar para C:\...Processando;
+>- Trabalhar os arquivos .ZIP;
+>- Mover arquivos para C:\...Processados\DDMMAAAA\;
+>- Criar Log do Fluxo;
+>- Criar Prototipo;
+>- Burndown da Equipe;
+>- Elaborar modelo Conceitual de dados;
+>- Elaborar modelo Lógico de dados; e
 >- Normalização da base de dados.
 
  **SPRINT 3**
->- Borndown da Equipe.
->- Instalar PostgreSQL.
->- Instalar Plugin PostGis.
->- Cria modelo físico da base de dados.
->- Criar tabela de Parâmetro de extensões.
->- Criar tabela de Controle de Integração 
->- Utilizar tabela de Parâmetro de extensões no fluxo de processamento dos arquivos.
+>- Burndown da Equipe;
+>- Instalar PostgreSQL;
+>- Instalar Plugin PostGis;
+>- Cria modelo físico da base de dados;
+>- Criar tabela de Parâmetro de extensões;
+>- Criar tabela de Controle de Integração;
+>- Utilizar tabela de Parâmetro de extensões no fluxo de processamento dos arquivos; e
 >- Atualizar tabela de Controle de Integração com o Status de “Integrado” ou “Falta Shapefile”.
 
  **SPRINT 4**
->- Criar interface gráfica.
->- Borndown da Equipe.
->- Integração dos shapefile na base de dados.
->- Exibir Status de integração
+>- Criar interface gráfica;
+>- Burndown da Equipe;
+>- Integração dos shapefile na base de dados; e
+>- Exibir Status de integração.
 ________________________________________________________________________________________________
 
 ## :card_index_dividers: Cards das Sprints
