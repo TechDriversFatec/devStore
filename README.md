@@ -78,7 +78,7 @@ ________________________________________________________________________________
 >- Elaboração da Apresentação (Powerpoint).
 
 >  **SPRINT 2**
->- Função de criação de estrutura de diretórios (Código);
+>- Função de criação de estrutura de diretórios;
 >- Move arquivos de  C:\...Processar para C:\...Processando;
 >- Trabalhar os arquivos .ZIP;
 >- Mover arquivos para C:\...Processados\DDMMAAAA\;
