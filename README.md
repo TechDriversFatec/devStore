@@ -90,13 +90,13 @@ ________________________________________________________________________________
 >- Normalização da base de dados.
 
 >Detalhamento das tarefas
-<img src="/Imagens PI/foto1.jpg">
-<img src="/Imagens PI/foto2.jpg">
-<img src="/Imagens PI/foto3.jpg">
-<img src="/Imagens PI/foto4.jpg">
-<img src="/Imagens PI/foto5.jpg">
-<img src="/Imagens PI/foto6.jpg">
-<img src="/Imagens PI/foto7.jpg">
+<img src="/Imagens PI/foto1.jpeg">
+<img src="/Imagens PI/foto2.jpeg">
+<img src="/Imagens PI/foto3.jpeg">
+<img src="/Imagens PI/foto4.jpeg">
+<img src="/Imagens PI/foto5.jpeg">
+<img src="/Imagens PI/foto6.jpeg">
+<img src="/Imagens PI/foto7.jpeg">
 
  **SPRINT 3**
 >- Burndown da Equipe;
