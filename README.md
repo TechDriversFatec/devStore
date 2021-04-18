@@ -89,14 +89,29 @@ ________________________________________________________________________________
 >- Elaborar modelo Lógico de dados; e
 >- Normalização da base de dados.
 
->Detalhamento das tarefas
-<img src="/Imagens PI/foto1.jpeg">
-<img src="/Imagens PI/foto2.jpeg">
-<img src="/Imagens PI/foto3.jpeg">
-<img src="/Imagens PI/foto4.jpeg">
-<img src="/Imagens PI/foto5.jpeg">
-<img src="/Imagens PI/foto6.jpeg">
-<img src="/Imagens PI/foto7.jpeg">
+>**Detalhamento das tarefas**
+
+>- Estrutura de diretórios
+> <img src="/Imagens PI/foto1.jpeg">
+
+>- Processar
+> <img src="/Imagens PI/foto2.jpeg">
+
+>- Processando
+> <img src="/Imagens PI/foto3.jpeg">
+
+>- Descompactando
+> <img src="/Imagens PI/foto4.jpeg">
+
+>- Backup
+> <img src="/Imagens PI/foto5.jpeg">
+
+>- LOG
+> <img src="/Imagens PI/foto6.jpeg">
+
+>- Arquivo Log
+> <img src="/Imagens PI/foto7.jpeg">
+
 
  **SPRINT 3**
 >- Burndown da Equipe;
