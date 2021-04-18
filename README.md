@@ -66,7 +66,7 @@ ________________________________________________________________________________
 ________________________________________________________________________________________________
 
 ## :hourglass_flowing_sand: Planejamento de Entregas
->  **SPRINT 1**
+>  **SPRINT 1** - Concluída 
 >- Entendimento do Problema do Cliente;
 >- Estudo sobre o CAR e sobre a estrutura dos shapefile;
 >- Criação do Nome do Grupo e Logo;
@@ -77,7 +77,7 @@ ________________________________________________________________________________
 >- Construção/Formatação do README.md; e
 >- Elaboração da Apresentação (Powerpoint).
 
->  **SPRINT 2**
+>  **SPRINT 2** - Concluída
 >- Função de criação de estrutura de diretórios;
 >- Move arquivos de  C:\...Processar para C:\...Processando;
 >- Trabalhar os arquivos .ZIP;
@@ -88,6 +88,15 @@ ________________________________________________________________________________
 >- Elaborar modelo Conceitual de dados;
 >- Elaborar modelo Lógico de dados; e
 >- Normalização da base de dados.
+
+>Detalhamento das tarefas
+<img src="/Imagens PI/foto1.jpg">
+<img src="/Imagens PI/foto2.jpg">
+<img src="/Imagens PI/foto3.jpg">
+<img src="/Imagens PI/foto4.jpg">
+<img src="/Imagens PI/foto5.jpg">
+<img src="/Imagens PI/foto6.jpg">
+<img src="/Imagens PI/foto7.jpg">
 
  **SPRINT 3**
 >- Burndown da Equipe;
