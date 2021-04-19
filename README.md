@@ -112,6 +112,12 @@ ________________________________________________________________________________
 >- Arquivo Log
 > <img src="/Imagens PI/foto7.jpeg">
 
+>- Modelo Conceitual
+> <img src="/Imagens PI/Modelo_Conceitual_1_Sprint2.jpeg">
+
+>- Modelo Lógico
+> <img src="/Imagens PI/Modelo_Logico_1_Sprint2.jpeg">
+
 
  **SPRINT 3**
 >- Burndown da Equipe;
