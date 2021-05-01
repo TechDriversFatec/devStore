@@ -4,7 +4,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
+import java.sql.SQLException;
 
+import br.com.fatec.banco.Conexao;
 import br.com.fatec.utils.Utils;
 import br.com.fatec.utils.ZipUtils;
 import br.com.fatec.view.Janela;
@@ -13,6 +15,20 @@ public class Principal {
 
 	public static void main(String[] args) {
 		
+		
+		Conexao banco = new Conexao();
+		
+		banco.Conectar("jdbc:postgresql://localhost:5432/TesteAPI", "postgres", "root");
+		
+		try {
+			System.out.println(banco.con.isClosed());
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		/*
 		Janela janela;
     	ZipUtils zip;
     	File arquivos;
@@ -105,5 +121,8 @@ public class Principal {
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
+    
+    */
     }
+    
 }
