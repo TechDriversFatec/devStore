@@ -99,8 +99,8 @@ ________________________________________________________________________________
 
 ## :mortar_board: Sprint 3
 <img src="/Imagens PI/Tabelas.jpg">
-<img src="/Imagens PI/Dados Tabela Estado.png">
-<img src="/Imagens PI/Dados Tabela Integracao.png">
+<img src="/Imagens PI/Dados Tabela Estado.jpg">
+<img src="/Imagens PI/Dados Tabela Integracao.jpg">
 
  **SPRINT 4**
 >- Criar interface gráfica;
