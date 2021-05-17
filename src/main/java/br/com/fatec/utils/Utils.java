@@ -86,5 +86,11 @@ public class Utils {
 	    return formatar.format(data);
 		
 	}
+	
+	public static Boolean arquivosDiretorio(String caminho, String extensao) {
+		
+		return false;
+		
+	}
 
 }

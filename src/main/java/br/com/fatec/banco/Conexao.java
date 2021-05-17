@@ -1,85 +1,158 @@
 package br.com.fatec.banco;
 
+import java.io.FileReader;
+import java.io.IOException;
 import java.sql.Connection;
+import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
+import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
-public class Conexao {
-	 /** Usada para a conexao com o banco de dados */
-    public Connection con = null;
-    
-    /** Usada para realizar as instrucoes SQL */
-    public Statement stmt; 
-    
-    /** Retorna os dados das tabelas do banco */
-    public ResultSet rs; 
-    
-    
-    /**Usada para receber o endereco da base de dados*/
-    private String endereco;
-    
-    /**Usada para receber o nome do usuario do banco */
-    private String usuario;
-    
-    /**Usada para receber a senha do usuario do banco */
-    private String senha; 
+import org.postgresql.core.v3.ConnectionFactoryImpl;
 
-    /** Esse metodo realiza a conexao com o banco, ele precisa de tres argumentos, o primeiro, recebe
-     * o endereço do banco, o segundo recebe o nome do usuario e o terceiro recebe a senha do 
-     * banco de dados. 
-     * 
-     * EXP: "jdbc:postgresql://localhost:5432/projeto_01", "sa", "sa"
-     * 
-     * **************************************************************************************************/
-    
-    public void Conectar(String strEnd, String strUsuario, String strSenha) {
+import br.com.fatec.utils.Utils;
 
-    	/** Recebendo o endereco,usuario e senha do usuario e repassando para a variavel global */
-        endereco = strEnd; 
-        usuario = strUsuario;
-        senha = strSenha;
+public class Conexao extends ConnectionFactoryImpl{
+	
+    private Connection con = null;
+    
+    private ResultSet rs = null;
+
+    private final String ENDERECO = "jdbc:postgresql://localhost:5432/";
+    
+    private final String USUARIO = "postgres";
+    
+    private final String SENHA = "root"; 
+    
+    private final String DRIVER = "org.postgresql.Driver";
+    
+    private final String DATABASE = "CAR";
+
+    public Connection getCon() {
+		return con;
+	}
+
+	public void setCon(Connection con) {
+		this.con = con;
+	}
+        
+    public Boolean Conectar() {
 
         try {
-        	/** Pasando o nome do Driver do PostgreSQL */
-            Class.forName("org.postgresql.Driver");
+        	
+            Class.forName(DRIVER);
             
-            /** Obtendo a conexao com o banco de dados*/
-            con = DriverManager.getConnection(endereco, usuario, strSenha);
+            con = DriverManager.getConnection(ENDERECO + DATABASE, USUARIO, SENHA);
             
-            /** Criando o Statement */
-            stmt = con.createStatement();
-            
-        /** Retorna um erro caso nao encontre o driver, ou alguma informacao sobre o mesmo
-         * esteja errada */
+            return true;
         } catch (ClassNotFoundException cnfe) {
             JOptionPane.showMessageDialog(null, "Erro ao conectar o driver");
-            cnfe.printStackTrace();
-            System.out.println(cnfe.getMessage());
-
-         /** Retorna um erro caso exista erro de query SQL */   
+            Utils.escreverLog("Erro no driver do banco de dados " + cnfe.getMessage());
+            return false;
+ 
         } catch (SQLException sqlex) {
-            JOptionPane.showMessageDialog(null, "erro na query");
-            sqlex.printStackTrace();
-            System.out.println(sqlex.getMessage());
+        	
+            JOptionPane.showMessageDialog(null, "Erro ao conectar no banco de dados");
+            Utils.escreverLog("Erro ao conectar no banco de dados " + sqlex.getMessage());
+            return false;
 
         }
     }
 
-    /** Esse metodo quando invocado, realiza a desconexao com o banco */
     public void Desconectar() {
-
+    	
         try {
+        	if (!con.isClosed()) {
             con.close();
-            
-        /** Retorna um erro caso nao consiga desconectar */    
+        	}
+             
         } catch (SQLException onConClose) {
             JOptionPane.showMessageDialog(null, "Erro ao desconectar o banco");
-            onConClose.printStackTrace();
+            Utils.escreverLog("Erro ao desconectar bancos de dados " + onConClose.getMessage());
         }
+    }
+    
+   
+    
+    public Boolean vericarTabelasBanco() {
+    	
+    	PreparedStatement pstmt;
+    	DatabaseMetaData dbmd;
+    	ResultSet rs;
+    	String line = "";
+    	Boolean existeEstado = false;
+    	Boolean existeMunicipio = false;
+    	Boolean existeAreaImovel = false;
+    	Boolean existeArea = false;
+    	Boolean existeTipo = false;
+    	Boolean existeIntegracao = false;
+    	
+    	try {
+    		
+    		Conectar();
+    		
+    		dbmd = con.getMetaData();
+    		
+    		rs = dbmd.getTables(null, null, "estado", null);
+    		
+    		if(rs.next()) {
+    			existeEstado = true;
+    		}
+    		
+    		rs = dbmd.getTables(null, null, "municipio", null);
+    		
+    		if(rs.next()) {
+    			existeMunicipio = true;
+    		}
+    		
+    		rs = dbmd.getTables(null, null, "area_imovel", null);
+    		
+    		if(rs.next()) {
+    			existeAreaImovel = true;
+    		}
+    		
+    		rs = dbmd.getTables(null, null, "area", null);
+    		
+    		if(rs.next()) {
+    			existeArea = true;
+    		}
+    		
+    		rs = dbmd.getTables(null, null, "tipo", null);
+    		
+    		if(rs.next()) {
+    			existeTipo = true;
+    		}
+    		
+    		
+    		rs = dbmd.getTables(null, null, "integrecao", null);
+    		
+    		if(rs.next()) {
+    			existeIntegracao = true;
+    		}
+    		
+    		if (!existeEstado && !existeMunicipio && !existeAreaImovel && !existeArea && !existeTipo && !existeIntegracao) {
+    			Scanner in = new Scanner(new FileReader(".\\sql\\tabelas.sql"));
+    			while (in.hasNextLine()) {
+    				line = line + in.nextLine();   
+    			}
+    		
+    			pstmt = con.prepareStatement(line);
+    		
+    			pstmt.executeUpdate();
+    			pstmt.close();
+    			Utils.escreverLog("Tabelas criadas no banco de dados.");
+    			
+    		}
+    		return true;
+			
+		} catch (IOException | SQLException e) {
+			Utils.escreverLog("Erro ao criar tabelas no banco - " + e.getMessage());
+			return false;
+		}
     }
 
 }

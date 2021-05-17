@@ -9,13 +9,17 @@
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
+    
 }
+
+
 
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
 }
+
 
 dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
@@ -30,6 +34,24 @@ dependencies {
     // https://mvnrepository.com/artifact/org.postgresql/postgresql
 	//implementation group: 'org.postgresql', name: 'postgresql', version: '42.1.4'
 	implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.20'
-    
-    
+	
+	// https://mvnrepository.com/artifact/commons-io/commons-io
+	implementation group: 'commons-io', name: 'commons-io', version: '2.4'
+	
 }
+
+
+jar {
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    manifest {
+        attributes(
+                'Implementation-Title': 'Jar Making Exaple',
+                "Main-Class": "br.com.fatec.main.Principal"
+        )
+    }
+    destinationDirectory = file("$rootDir/jar_app")
+    archivesBaseName = 'app'
+}
+

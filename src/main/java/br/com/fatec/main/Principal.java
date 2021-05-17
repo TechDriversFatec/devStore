@@ -5,33 +5,73 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JOptionPane;
+
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
 
 import br.com.fatec.banco.Conexao;
+import br.com.fatec.model.Estado;
+import br.com.fatec.model.Integracao;
+import br.com.fatec.model.Municipio;
+import br.com.fatec.model.Parametro;
+import br.com.fatec.model.service.EstadoDaoImpl;
+import br.com.fatec.model.service.IntegracaoDaoImp;
+import br.com.fatec.model.service.MunicipioDaoImpl;
+import br.com.fatec.model.service.ParametroDaoImpl;
 import br.com.fatec.utils.Utils;
 import br.com.fatec.utils.ZipUtils;
 import br.com.fatec.view.Janela;
 
 public class Principal {
+	
+	private static Conexao conexao;
+	
+	private static String codigoIBGE;
+	
+	private static Estado estado;
+	
+	private static EstadoDaoImpl estadoDaoImpl;
+	
+	private static Municipio municipio;
+	
+	private static MunicipioDaoImpl municipioDaoImpl;
+	
+	private static Integracao integracao;
+	
+	private static IntegracaoDaoImp integracaoDaoImp;
+	
 
 	public static void main(String[] args) {
-		
-		
-		Conexao banco = new Conexao();
-		
-		banco.Conectar("jdbc:postgresql://localhost:5432/TesteAPI", "postgres", "root");
-		
-		try {
-			System.out.println(banco.con.isClosed());
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		
-		/*
+
 		Janela janela;
     	ZipUtils zip;
     	File arquivos;
+    	
+    	conexao = new Conexao();
+    	
+    	try {
+    		if (!conexao.Conectar()) {
+    			JOptionPane.showMessageDialog(null, "Banco de dados não existe, entre em contato com o suporte!");
+                Utils.escreverLog("Banco de dados não existe, entre em contato com o suporte!");
+                System.exit(0);
+    		}else {
+    			if(!conexao.vericarTabelasBanco()) {
+    				JOptionPane.showMessageDialog(null, "Problema em criar tabelas, entre em contato com o suporte!");
+                    Utils.escreverLog("Problema em criar tabelas, entre em contato com o suporte!");
+                    System.exit(0);
+    			}
+    		}
+    		
+    	}finally {
+    		conexao.Desconectar();
+    	}
+    
+    	
     	
     	try {
     		Utils.escreverLog("Criando/Verificando diretórios.");
@@ -39,6 +79,9 @@ public class Principal {
     		
     		janela = new Janela();
     		zip = new ZipUtils();
+    		municipioDaoImpl = new MunicipioDaoImpl();
+    		estadoDaoImpl = new EstadoDaoImpl();
+    		integracaoDaoImp = new IntegracaoDaoImp();
   		
     		janela.frame.setVisible(true);
     		arquivos = new File(Utils.CAMINHOAPLICACAO + Utils.PROCESSAR + File.separator);
@@ -75,12 +118,42 @@ public class Principal {
     							
     							File listaCar[] = (new File(Utils.CAMINHOAPLICACAO + Utils.PROCESSANDO + File.separator).listFiles());
     							
+    							codigoIBGE = lA.getName().split("_")[1].substring(0, 7);
+    							
+    							estado = estadoDaoImpl.findByCodigoEstado(codigoIBGE.substring(0, 2));
+    							
+    							municipio = municipioDaoImpl.findByCodigoMunicipio(codigoIBGE.substring(2, 7));
+    							
     							for(File lc: listaCar) {
+    								integracao = new Integracao();
     								
-    								if(lc.getName().equals(lA.getName())) {
-    									continue;
+    								if(!lc.getName().equals(lA.getName())) {
+    									Utils.escreverLog("Lendo o arquivo " + lc.getName() + ".");
+    									integracao.setExtensaoSHP(zip.verificaExtensao(lc.getAbsolutePath(), "shp"));
+    									integracao.setExtensaoSHX(zip.verificaExtensao(lc.getAbsolutePath(), "shx"));
+    									integracao.setExtensaoDBF(zip.verificaExtensao(lc.getAbsolutePath(), "dbf"));
+    									integracao.setExtensaoPRJ(zip.verificaExtensao(lc.getAbsolutePath(), "prj"));
+    									
+    									if(integracao.getExtensaoSHP() && integracao.getExtensaoSHX() && integracao.getExtensaoDBF() &&
+    											integracao.getExtensaoPRJ()) {
+    										integracao.setIntegrado(true);
+    										integracao.setDataHoraIntegracao(new Timestamp(System.currentTimeMillis()));
+    										integracao.setAreaArquivo(lc.getName());
+    										integracao.setShape_arquivo(lA.getName());
+    										integracao.setMunicipioCodigo(municipio.getCodigoMunicipio());
+    										Utils.escreverLog("Arquivo " + lc.getName() + " Integrado.");
+    										
+    									}else {
+    										integracao.setIntegrado(false);
+    										integracao.setDataHoraIntegracao(new Timestamp(System.currentTimeMillis()));
+    										integracao.setAreaArquivo(lc.getName());
+    										integracao.setShape_arquivo(lA.getName());
+    										integracao.setMunicipioCodigo(municipio.getCodigoMunicipio());
+    										Utils.escreverLog("Arquivo " + lc.getName() + " não integrado por falta de arquivos.");
+    									}
+    									
+    									integracaoDaoImp.save(integracao);
     								}
-    								Utils.escreverLog("Lendo o arquivo " + lc.getName() + ".");
     							}
     							
     							for(File lc: listaCar) {
@@ -122,7 +195,7 @@ public class Principal {
 			// TODO: handle exception
 		}
     
-    */
+    
     }
     
 }
