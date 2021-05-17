@@ -98,7 +98,7 @@ ________________________________________________________________________________
 >- Atualizar tabela de Controle de Integração com o Status de “Integrado” ou “Falta Shapefile”.
 
 ## :mortar_board: Sprint 3
-<img src="/Imagens PI/Tabelas.png">
+<img src="/Imagens PI/Tabelas.jpg">
 <img src="/Imagens PI/Dados Tabela Estado.png">
 <img src="/Imagens PI/Dados Tabela Integracao.png">
 
