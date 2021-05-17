@@ -94,10 +94,13 @@ ________________________________________________________________________________
 >- Instalar PostgreSQL;
 >- Instalar Plugin PostGis;
 >- Cria modelo físico da base de dados;
->- Criar tabela de Parâmetro de extensões;
 >- Criar tabela de Controle de Integração;
->- Utilizar tabela de Parâmetro de extensões no fluxo de processamento dos arquivos; e
 >- Atualizar tabela de Controle de Integração com o Status de “Integrado” ou “Falta Shapefile”.
+
+## :mortar_board: Sprint 3
+<img src="/Imagens PI/Tabelas.png">
+<img src="/Imagens PI/Dados Tabela Estado.png">
+<img src="/Imagens PI/Dados Tabela Integracao.png">
 
  **SPRINT 4**
 >- Criar interface gráfica;
