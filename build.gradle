@@ -9,7 +9,11 @@
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
-    
+    id 'eclipse'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.7'
+    id 'com.github.johnrengelman.shadow' version '6.1.0'
+	id 'java'
 }
 
 
@@ -18,8 +22,14 @@ repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
+    mavenCentral()
 }
 
+javafx {
+    version = "14.0.2.1"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+    mainClassName = "br.com.fatec.main.Principal"
+}
 
 dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
@@ -40,7 +50,15 @@ dependencies {
 	
 }
 
+shadowJar {
+   archiveBaseName.set('CAR')
+   archiveClassifier.set('')
+   archiveVersion.set('')
 
+}
+
+
+/*
 jar {
     from {
         configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
@@ -53,5 +71,5 @@ jar {
     }
     destinationDirectory = file("$rootDir/jar_app")
     archivesBaseName = 'app'
-}
+}*/
 
