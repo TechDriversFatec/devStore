@@ -13,7 +13,7 @@ ________________________________________________________________________________
 - Isabella Rosa Peixoto (Dev)
 - Paulo Vitor (Dev)
 - Eguimar Batista da Costa (Dev)
-
+- Orlando Pereira de Seixas (Dev)
 _________________________________________________________________________________________________
 
 ## :rocket: O Projeto
