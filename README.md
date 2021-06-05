@@ -97,10 +97,7 @@ ________________________________________________________________________________
 _____________________________________________________________________________________________
 
 ## :card_index_dividers: Cards das Sprints
-<img src="/Imagens PI/card1.jpg">
-<img src="/Imagens PI/card2.jpg">
-<img src="/Imagens PI/card3.jpg">
-<img src="/Imagens PI/card4.jpg">
+<img src="/Imagens PI/CARDS_PI.jpeg">
 
 _____________________________________________________________________________________________
 
