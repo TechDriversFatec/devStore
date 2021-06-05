@@ -16,23 +16,12 @@ ________________________________________________________________________________
 - Orlando Pereira de Seixas (Dev)
 _________________________________________________________________________________________________
 
-## :rocket: O Projeto
-O objetivo deste projeto em questão é apresentar ao nosso cliente, a empresa VISIONA, uma solução para o problema de não ter uma base de dados comunizada, unificada e organizada dos registros que são disponibilizados pelos proprietários das áreas rurais, através do cadastro ambiental rural (CAR).
-A empresa fornece a órgãos públicos e privados um registro geoprocessado por imagens de satélite orbitais, que tem por finalidade comparar os dados de dimensões territoriais, áreas de preservação, entes hídricos, topografia e outros dados referentes a propriedade, estes dados são comparados com a imagens de satélite em tempo real por isso é necessário que estejam atualizados e organizados.
-
+## :white_check_mark: Descrição Do Projeto
+A meta deste projeto em questão é apresentar ao nosso cliente, a empresa VISIONA, uma solução para o problema de não ter uma base de dados comunizada, unificada e organizada dos registros que são disponibilizados pelos proprietários das áreas rurais, através do cadastro ambiental rural (CAR).   E possuimos como objetivo desenvolver um MVP que forneça ao cliente uma base de dados completa, confiável e organizada com as informações oriundas do sistema CAR.Sendo utilizado utilizado ferramentas do ciclo de aprendizado e metodologia a S (entregas e desenvolvimento ágil), nas sprints demonstraremos e entregaremos de forma gradativa desde a aquisição, leitura e depuração das informações até a construção e finalização do banco de dados.
 
 ________________________________________________________________________________________________
 
-## :dart: Proposta
-O grupo de API DevStore tem como meta desenvolver um MVP que forneça ao cliente uma base de dados completa, confiável e organizada com as informações oriundas do sistema CAR.
-Para isso será utilizado ferramentas do ciclo de aprendizado e metodologia a SCRUM (entregas e desenvolvimento ágil), nas sprints demonstraremos e entregaremos de forma gradativa desde a aquisição, leitura e depuração das informações até a construção e finalização do banco de dados.  
-
-
-
-
-________________________________________________________________________________________________
-
-> **REQUISITOS*
+## :green_book: Requisitos do Projeto
 
  - [x]  **Descompactar arquivos baixados** - Pesquisar bibliotecas de permitam a leitura dos arquivos compactados, caso não encontremos, o será necessário descompactar;
 
@@ -44,15 +33,17 @@ ________________________________________________________________________________
 
  - [x]  **Importar arquivos Shapefile para a base de dados**.<br><br>
 ________________________________________________________________________________________________
-> **TAREFAS**
+## :computer: Tecnologias Utilizadas 
 
  - [x] Banco:
  - [x] PostgreSQL 	= SGBD
  - [x] PostGis	= Módulo Geo(Plugin)
  - [x] PGADM	= Interface Gráfica para Administrar dados no PostgreSQL.
-________________________________________________________________________________________________
+ - [x] JAVA	= Integação dos Arquivos do CAR
+ - [x] QGIS = Utilizado para Abertura dos Arquivos SHAPEFILE
+______________________________________________________________________________________________________
 
-> **ESTRUTURA DE DIRETÓRIO / FLUXO:**
+## :white_check_mark: Features
 - [x] C:\...Processar ->Move para Processando
 - [x] C:\...Processando
 - [x] Verificar Estruturas DIR/Arquivos/ZIP (Integrar Arquivos .ZIP).
@@ -89,7 +80,7 @@ ________________________________________________________________________________
 >- Elaborar modelo Lógico de dados; e
 >- Normalização da base de dados.
 
- **SPRINT 3**
+>  **SPRINT 3**
 >- Burndown da Equipe;
 >- Instalar PostgreSQL;
 >- Instalar Plugin PostGis;
@@ -97,17 +88,13 @@ ________________________________________________________________________________
 >- Criar tabela de Controle de Integração;
 >- Atualizar tabela de Controle de Integração com o Status de “Integrado” ou “Falta Shapefile”.
 
-## :mortar_board: Sprint 3
-<img src="/Imagens PI/Tabelas.jpg">
-<img src="/Imagens PI/Dados_Tabela_Estado.jpg">
-<img src="/Imagens PI/Dados_Tabela_Integracao.jpg">
-
- **SPRINT 4**
+> **SPRINT 4**
 >- Criar interface gráfica;
 >- Burndown da Equipe;
 >- Integração dos shapefile na base de dados; e
 >- Exibir Status de integração.
-________________________________________________________________________________________________
+
+_____________________________________________________________________________________________
 
 ## :card_index_dividers: Cards das Sprints
 <img src="/Imagens PI/card1.jpg">
@@ -115,10 +102,7 @@ ________________________________________________________________________________
 <img src="/Imagens PI/card3.jpg">
 <img src="/Imagens PI/card4.jpg">
 
-## :mortar_board: Wireframe
-<img src="/Imagens PI/wire1.jpg">
-<img src="/Imagens PI/wire2.jpg">
-<img src="/Imagens PI/wire3.jpg">
+_____________________________________________________________________________________________
 
 ## :bar_chart: User Stories
 <img src="/Imagens PI/User_.jpg">
