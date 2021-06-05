@@ -104,5 +104,9 @@ ________________________________________________________________________________
 ## :bar_chart: User Stories
 <img src="/Imagens PI/User_.jpg">
 
+_____________________________________________________________________________________________
 
+## :film_frames: Vídeos
+
+**SRINT 2**
 <img src="/Imagens PI/VIDEO_SPRINT_2.mp4" autostart="false" height="30" width="144" />
