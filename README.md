@@ -108,4 +108,4 @@ ________________________________________________________________________________
 ## :film_frames: Vídeos
 
 **SPRINT 2**
-<img src="/Imagens PI/VIDEO_SPRINT_2.mp4" autostart="false" height="30" width="144" />
+<img src="/Imagens PI/Video_Sprint_2.mp4" autostart="false" height="30" width="144" />
