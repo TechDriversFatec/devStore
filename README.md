@@ -107,5 +107,5 @@ ________________________________________________________________________________
 
 ## :film_frames: Vídeos
 
-**SRINT 2**
+**SPRINT 2**
 <img src="/Imagens PI/VIDEO_SPRINT_2.mp4" autostart="false" height="30" width="144" />
