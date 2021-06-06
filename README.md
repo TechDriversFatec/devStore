@@ -17,8 +17,7 @@ ________________________________________________________________________________
 _________________________________________________________________________________________________
 
 ## :white_check_mark: Descrição Do Projeto
-A meta do projeto em questão é apresentar ao nosso cliente, a empresa VISIONA, uma solução para o problema de não ter uma base de dados comunizada, unificada e organizada dos registros que são disponibilizados pelos proprietários das áreas rurais, através do cadastro ambiental rural CAR.   E possuimos como objetivo desenvolver um MVP que forneça ao cliente uma base de dados completa, confiável e organizada com as informações oriundas do sistema CAR.Sendo utilizado utilizado ferramentas do ciclo de aprendizado e metodologia a S (entregas e desenvolvimento ágil), nas sprints demonstraremos e entregaremos de forma gradativa desde a aquisição, leitura e depuração das informações até a construção e finalização do banco de dados.
-
+A meta do projeto em questão é apresentar ao nosso cliente, a empresa VISIONA, uma solução para o problema de não ter uma base de dados comunizada, unificada e organizada dos registros que são disponibilizados pelos proprietários das áreas rurais, através do cadastro ambiental rural CAR.   E possuimos como objetivo desenvolver um MVP que forneça ao cliente uma base de dados completa, confiável e organizada com as informações oriundas do sistema CAR.Sendo utilizado  ferramentas do ciclo de aprendizado e metodologia Scrum (entregas e desenvolvimento ágil), nas sprints demonstraremos e entregaremos de forma gradativa desde a aquisição, leitura e depuração das informações até a construção e finalização do banco de dados.
 ________________________________________________________________________________________________
 
 ## :green_book: Requisitos do Projeto
