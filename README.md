@@ -109,3 +109,6 @@ ________________________________________________________________________________
 
 **SPRINT 2**
 <img src="/Imagens PI/Video_Sprint_2.mp4" autostart="false" height="30" width="144" />
+
+**SPRINT 3**
+<img src="/Imagens PI/Video_Sprint_3.mp4" autostart="false" height="30" width="144" />
