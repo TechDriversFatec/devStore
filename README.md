@@ -37,20 +37,6 @@ ________________________________________________________________________________
  <img src="/Imagens PI/Imagem_Tecnologias.jpeg">
 
 ______________________________________________________________________________________________________
-
-## :white_check_mark: Features
-- [x] C:\...Processar ->Move para Processando
-- [x] C:\...Processando
-- [x] Verificar Estruturas DIR/Arquivos/ZIP (Integrar Arquivos .ZIP).
-- [x] Verificar extensões válidas (Criar tabela de Paramentos de Extensões)
-- [x] Gravar Status da Integração (Criar tabela de Controle de Integração).
-- [x] Fazer Integração de arquivos shape para a Base de dados.
-- [x] Mover arquivos para c:\...Processados\DDMMAAAA\.
-- [x] C:\...Processados\DDMMAAAA\ 	
-- [x] C:\...Log	
-- [x] Log de Fluxo.
-________________________________________________________________________________________________
-
 ## :hourglass_flowing_sand: Planejamento de Entregas
 >  **SPRINT 1**
 
