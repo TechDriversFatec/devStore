@@ -13,26 +13,14 @@ ________________________________________________________________________________
 - Isabella Rosa Peixoto (Dev)
 - Paulo Vitor (Dev)
 - Eguimar Batista da Costa (Dev)
-
+- Orlando Pereira de Seixas (Dev)
 _________________________________________________________________________________________________
 
-## :rocket: O Projeto
-O objetivo deste projeto em questão é apresentar ao nosso cliente, a empresa VISIONA, uma solução para o problema de não ter uma base de dados comunizada, unificada e organizada dos registros que são disponibilizados pelos proprietários das áreas rurais, através do cadastro ambiental rural (CAR).
-A empresa fornece a órgãos públicos e privados um registro geoprocessado por imagens de satélite orbitais, que tem por finalidade comparar os dados de dimensões territoriais, áreas de preservação, entes hídricos, topografia e outros dados referentes a propriedade, estes dados são comparados com a imagens de satélite em tempo real por isso é necessário que estejam atualizados e organizados.
-
-
+## :white_check_mark: Descrição Do Projeto
+A meta do projeto em questão é apresentar ao nosso cliente, a empresa VISIONA, uma solução para o problema de não ter uma base de dados comunizada, unificada e organizada dos registros que são disponibilizados pelos proprietários das áreas rurais, através do cadastro ambiental rural CAR.   E possuimos como objetivo desenvolver um MVP que forneça ao cliente uma base de dados completa, confiável e organizada com as informações oriundas do sistema CAR.Sendo utilizado  ferramentas do ciclo de aprendizado e metodologia Scrum (entregas e desenvolvimento ágil), nas sprints demonstraremos e entregaremos de forma gradativa desde a aquisição, leitura e depuração das informações até a construção e finalização do banco de dados.
 ________________________________________________________________________________________________
 
-## :dart: Proposta
-O grupo de API DevStore tem como meta desenvolver um MVP que forneça ao cliente uma base de dados completa, confiável e organizada com as informações oriundas do sistema CAR.
-Para isso será utilizado ferramentas do ciclo de aprendizado e metodologia a SCRUM (entregas e desenvolvimento ágil), nas sprints demonstraremos e entregaremos de forma gradativa desde a aquisição, leitura e depuração das informações até a construção e finalização do banco de dados.  
-
-
-
-
-________________________________________________________________________________________________
-
-> **REQUISITOS*
+## :green_book: Requisitos do Projeto
 
  - [x]  **Descompactar arquivos baixados** - Pesquisar bibliotecas de permitam a leitura dos arquivos compactados, caso não encontremos, o será necessário descompactar;
 
@@ -40,19 +28,21 @@ ________________________________________________________________________________
 
  - [x]  **Reorganizar/filtrar apenas diretorios que possuam os 3 tipos as extensões minimas(.shp,.shx,*.dbf), que são os casos indispensáveis** - Quando um shapefile não possuir a estrutura correta(.shp,.shx,*.dbf),  não devemos ignorar, devemos tratar esta situação, informando que “não existe dado para o município”;
 
- - [x]  **Criar base de dados para dados georeferenciados unifcada com flexibilidade de ser popupalado por qualquer município do país**; e
+ - [x]  **Criar base de dados para dados georeferenciados unifcada com flexibilidade de ser popupalado por qualquer município do país**. 
 
  - [x]  **Importar arquivos Shapefile para a base de dados**.<br><br>
 ________________________________________________________________________________________________
-> **TAREFAS**
+## :computer: Tecnologias Utilizadas 
 
  - [x] Banco:
  - [x] PostgreSQL 	= SGBD
  - [x] PostGis	= Módulo Geo(Plugin)
  - [x] PGADM	= Interface Gráfica para Administrar dados no PostgreSQL.
-________________________________________________________________________________________________
+ - [x] JAVA	= Integação dos Arquivos do CAR
+ - [x] QGIS = Utilizado para Abertura dos Arquivos SHAPEFILE
+______________________________________________________________________________________________________
 
-> **ESTRUTURA DE DIRETÓRIO / FLUXO:**
+## :white_check_mark: Features
 - [x] C:\...Processar ->Move para Processando
 - [x] C:\...Processando
 - [x] Verificar Estruturas DIR/Arquivos/ZIP (Integrar Arquivos .ZIP).
@@ -89,33 +79,36 @@ ________________________________________________________________________________
 >- Elaborar modelo Lógico de dados; e
 >- Normalização da base de dados.
 
- **SPRINT 3**
+>  **SPRINT 3**
 >- Burndown da Equipe;
 >- Instalar PostgreSQL;
 >- Instalar Plugin PostGis;
 >- Cria modelo físico da base de dados;
->- Criar tabela de Parâmetro de extensões;
 >- Criar tabela de Controle de Integração;
->- Utilizar tabela de Parâmetro de extensões no fluxo de processamento dos arquivos; e
 >- Atualizar tabela de Controle de Integração com o Status de “Integrado” ou “Falta Shapefile”.
 
- **SPRINT 4**
+> **SPRINT 4**
 >- Criar interface gráfica;
 >- Burndown da Equipe;
 >- Integração dos shapefile na base de dados; e
 >- Exibir Status de integração.
-________________________________________________________________________________________________
+
+_____________________________________________________________________________________________
 
 ## :card_index_dividers: Cards das Sprints
-<img src="/Imagens PI/card1.jpg">
-<img src="/Imagens PI/card2.jpg">
-<img src="/Imagens PI/card3.jpg">
-<img src="/Imagens PI/card4.jpg">
+<img src="/Imagens PI/CARDS_PI.jpeg">
 
-## :mortar_board: Wireframe
-<img src="/Imagens PI/wire1.jpg">
-<img src="/Imagens PI/wire2.jpg">
-<img src="/Imagens PI/wire3.jpg">
+_____________________________________________________________________________________________
 
 ## :bar_chart: User Stories
-<img src="/Imagens PI/User_.jpg">
+<img src="/Imagens PI/USER_STORIES_PI.jpeg">
+
+_____________________________________________________________________________________________
+
+## :film_frames: Vídeos
+
+**SPRINT 2**
+<img src="/Imagens PI/Video_Sprint_2.mp4" autostart="false" height="30" width="144" />
+
+**SPRINT 3**
+<img src="/Imagens PI/Video_Sprint_3.mp4" autostart="false" height="30" width="144" />
