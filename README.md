@@ -32,14 +32,10 @@ ________________________________________________________________________________
 
  - [x]  **Importar arquivos Shapefile para a base de dados**.<br><br>
 ________________________________________________________________________________________________
-## :computer: Tecnologias Utilizadas 
+## :computer: Tecnologias Utilizadas
 
- - [x] Banco:
- - [x] PostgreSQL 	= SGBD
- - [x] PostGis	= Módulo Geo(Plugin)
- - [x] PGADM	= Interface Gráfica para Administrar dados no PostgreSQL.
- - [x] JAVA	= Integação dos Arquivos do CAR
- - [x] QGIS = Utilizado para Abertura dos Arquivos SHAPEFILE
+ <img src="/Imagens PI/Imagem_Tecnologias.jpeg">
+
 ______________________________________________________________________________________________________
 
 ## :white_check_mark: Features
@@ -57,48 +53,32 @@ ________________________________________________________________________________
 
 ## :hourglass_flowing_sand: Planejamento de Entregas
 >  **SPRINT 1**
->- Entendimento do Problema do Cliente;
->- Estudo sobre o CAR e sobre a estrutura dos shapefile;
->- Criação do Nome do Grupo e Logo;
->- Elaboração do Product Backlog;
->- Elaboração das Users Stories;
->- Construção do Wireframe;
->- Elaboração dos Cards;
->- Construção/Formatação do README.md; e
->- Elaboração da Apresentação (Powerpoint).
 
+<img src="/Imagens PI/Imagem_Card1.jpeg">
+
+________________________________________________________________________________________________
 >  **SPRINT 2**
->- Função de criação de estrutura de diretórios;
->- Move arquivos de  C:\...Processar para C:\...Processando;
->- Trabalhar os arquivos .ZIP;
->- Mover arquivos para C:\...Processados\DDMMAAAA\;
->- Criar Log do Fluxo;
->- Criar Prototipo;
->- Burndown da Equipe;
->- Elaborar modelo Conceitual de dados;
->- Elaborar modelo Lógico de dados; e
->- Normalização da base de dados.
 
+<img src="/Imagens PI/Imagem_Card2.jpeg">
+
+________________________________________________________________________________________________
 >  **SPRINT 3**
->- Burndown da Equipe;
->- Instalar PostgreSQL;
->- Instalar Plugin PostGis;
->- Cria modelo físico da base de dados;
->- Criar tabela de Controle de Integração;
->- Atualizar tabela de Controle de Integração com o Status de “Integrado” ou “Falta Shapefile”.
 
+<img src="/Imagens PI/Imagem_Card3.jpeg">
+
+________________________________________________________________________________________________
 > **SPRINT 4**
->- Criar interface gráfica;
->- Burndown da Equipe;
->- Integração dos shapefile na base de dados; e
->- Exibir Status de integração.
+
+<img src="/Imagens PI/Imagem_Card4.jpeg">
 
 _____________________________________________________________________________________________
 
-## :card_index_dividers: Cards das Sprints
-<img src="/Imagens PI/CARDS_PI.jpeg">
+
+## :arrows_clockwise: Wireframes
+<img src="/Imagens PI/Imagem_Wireframe.jpeg">
 
 _____________________________________________________________________________________________
+
 
 ## :bar_chart: User Stories
 <img src="/Imagens PI/USER_STORIES_PI.jpeg">
@@ -112,3 +92,7 @@ ________________________________________________________________________________
 
 **SPRINT 3**
 <img src="/Imagens PI/Video_Sprint_3.mp4" autostart="false" height="30" width="144" />
+
+**SPRINT 4**
+<img src="/Imagens PI/Video_Sprint_4.mp4" autostart="false" height="30" width="144" />
+
