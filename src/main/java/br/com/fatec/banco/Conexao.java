@@ -1,5 +1,7 @@
 package br.com.fatec.banco;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.sql.Connection;
@@ -147,12 +149,40 @@ public class Conexao extends ConnectionFactoryImpl{
     			Utils.escreverLog("Tabelas criadas no banco de dados.");
     			
     		}
+    		
+    		
     		return true;
 			
 		} catch (IOException | SQLException e) {
 			Utils.escreverLog("Erro ao criar tabelas no banco - " + e.getMessage());
 			return false;
 		}
+    }
+    
+    public void testeInsert() {
+        
+    	PreparedStatement pstmt;
+    	Conectar();
+    	String line = "";
+		Scanner in;
+		try {
+			in = new Scanner(new FileReader(".\\sql\\APP.sql"));
+			while (in.hasNextLine()) {
+				line = line + in.nextLine();   
+			}
+		
+			pstmt = con.prepareStatement(line);
+		
+			pstmt.executeUpdate();
+			pstmt.close();
+		} catch (FileNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			Utils.escreverLog("Erro teste insert : " + e.getMessage());
+		}
+		
+		
+		
+		Desconectar();
     }
 
 }
