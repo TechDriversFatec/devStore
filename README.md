@@ -7,7 +7,7 @@
 
 _________________________________________________________________________________________________
 ### **Grupo:**
-- Junio Sendreto  (SM)
+- Junio Sendreto  (SM) www.linkedin.com/in/junio-sendreto
 - Fábio José da Silva  (PO)
 - Jeferson Constantino (Dev)
 - Isabella Rosa Peixoto (Dev)
