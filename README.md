@@ -10,7 +10,7 @@ ________________________________________________________________________________
 - Junio Sendreto  (SM) www.linkedin.com/in/junio-sendreto
 - Fábio José da Silva  (PO)
 - Jeferson Constantino (Dev)
-- Isabella Rosa Peixoto (Dev)
+- Isabella Rosa Peixoto (Dev) www.linkedin.com/in/isabellarps/
 - Paulo Vitor (Dev)
 - Eguimar Batista da Costa (Dev)
 - Orlando Pereira de Seixas (Dev)
