@@ -12,7 +12,7 @@ ________________________________________________________________________________
 - Jeferson Constantino (Dev)
 - Isabella Rosa Peixoto (Dev) www.linkedin.com/in/isabellarps/
 - Paulo Vitor (Dev)
-- Eguimar Batista da Costa (Dev) https://www.linkedin.com/in/eguimar-costa-03a175214/
+- Eguimar Batista da Costa (Dev) www.linkedin.com/in/eguimar-costa-03a175214/
 - Orlando Pereira de Seixas (Dev)
 _________________________________________________________________________________________________
 
