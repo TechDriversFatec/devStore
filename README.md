@@ -11,7 +11,7 @@ ________________________________________________________________________________
 - Fábio José da Silva  (PO)
 - Jeferson Constantino (Dev)
 - Isabella Rosa Peixoto (Dev) www.linkedin.com/in/isabellarps/
-- Paulo Vitor (Dev)
+- Paulo Vitor (Dev) www.linkedin.com/in/paulo-vítor/
 - Eguimar Batista da Costa (Dev) www.linkedin.com/in/eguimar-costa-03a175214/
 - Orlando Pereira de Seixas (Dev)
 _________________________________________________________________________________________________
