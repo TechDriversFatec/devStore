@@ -1,5 +1,5 @@
 # PROJETO INTEGRADOR - DevStore
-<FATEC Profº Jessen Vidal, São José dos Campos, 2º semestre de 2020, Curso: Tecnologia em Banco de Dados -->
+<FATEC Profº Jessen Vidal, São José dos Campos, 2º semestre de 2021, Curso: Tecnologia em Banco de Dados -->
 <!--img src="Imagens PI/Logo_Fatec.png"-->
 <p align="center">
 <img src="/Imagens PI/logo.jpg">
